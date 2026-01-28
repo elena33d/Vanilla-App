@@ -66,6 +66,67 @@ body {
   margin-top: 20px;
   font-size: 18px;
 }
+/* ===== HERO ===== */
+
+.hero {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.heroContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.heroContent {
+  max-width: 500px;
+}
+
+.heroTitle {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.heroAccent {
+  color: #7e847f;
+}
+
+.heroText {
+  font-size: 16px;
+  margin-bottom: 24px;
+  color: #555;
+}
+
+.heroTags {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.heroTag {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #7e847f;
+  font-size: 14px;
+}
+
+.heroImageWrapper {
+  max-width: 500px;
+}
+
+.heroImage {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');

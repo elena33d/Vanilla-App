@@ -127,6 +127,50 @@ body {
   display: block;
   border-radius: 12px;
 }
+/* ===== FILTERS ===== */
+
+.filtersSection {
+  padding: 40px 0;
+}
+
+.filtersContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.filtersTitle {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.filtersTabs {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filterBtn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid #7e847f;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filterBtn.isActive {
+  background-color: #7e847f;
+  color: #fff;
+}
+
+.filterBtn:hover {
+  background-color: #7e847f;
+  color: #fff;
+}
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');

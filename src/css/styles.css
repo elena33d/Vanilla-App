@@ -226,6 +226,98 @@ body {
   font-size: 14px;
   color: #d9d9d9;
 }
+/* ===== EXERCISES ===== */
+
+.isHidden {
+  display: none;
+}
+
+.exercisesSection {
+  padding-bottom: 80px;
+}
+
+.exercisesContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.exercisesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.exercisesTitle {
+  font-size: 28px;
+}
+
+.searchForm {
+  display: flex;
+  gap: 8px;
+}
+
+.searchInput {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #7e847f;
+}
+
+.searchBtn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background-color: #7e847f;
+  color: #fff;
+  cursor: pointer;
+}
+
+.exercisesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exerciseCard {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.exerciseTop {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.exerciseRating {
+  font-size: 14px;
+}
+
+.exerciseName {
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+.exerciseInfo {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  font-size: 14px;
+}
+
+.startBtn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  background-color: #7e847f;
+  color: #fff;
+  cursor: pointer;
+}
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');

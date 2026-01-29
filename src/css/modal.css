@@ -85,3 +85,39 @@
 .isHidden {
   display: none;
 }
+.ratingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ratingStars {
+  display: flex;
+  gap: 10px;
+  border: none;
+}
+
+.ratingStars label {
+  cursor: pointer;
+}
+
+.emailLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.emailLabel input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.submitBtn {
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  background-color: #7e847f;
+  color: #fff;
+  cursor: pointer;
+}

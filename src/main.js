@@ -6,6 +6,16 @@ import categoriesTemplate from './partials/categories.html';
 import './js/categories';
 import exercisesTemplate from './partials/exercises.html';
 import './js/exercises';
+import modalTemplate from './partials/modal-exercise.html';
+import { openModal } from './js/modal-exercise';
+
+document.body.insertAdjacentHTML('beforeend', modalTemplate);
+
+document.addEventListener('click', event => {
+  if (event.target.classList.contains('startBtn')) {
+    openModal();
+  }
+});
 
 const exercises = document.querySelector('.exercises');
 exercises.innerHTML = exercisesTemplate;
@@ -21,6 +31,7 @@ const hero = document.querySelector('.hero');
 
 header.innerHTML = headerTemplate;
 hero.innerHTML = heroTemplate;
+
 
 
 

@@ -1,3 +1,5 @@
+import { addToFavorites } from './favorites';
+
 const backdrop = document.querySelector('[data-modal-backdrop]');
 const closeBtn = document.querySelector('[data-modal-close]');
 
@@ -24,3 +26,17 @@ backdrop.addEventListener('click', event => {
 });
 
 closeBtn.addEventListener('click', closeModal);
+const favoriteBtn = document.querySelector('.favoriteBtn');
+
+favoriteBtn.addEventListener('click', () => {
+  const exercise = {
+    id: '1',
+    name: 'Push-ups',
+    bodyPart: 'Chest',
+    target: 'Pectorals',
+    calories: 45,
+  };
+
+  addToFavorites(exercise);
+  alert('Added to favorites ❤️');
+});

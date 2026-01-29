@@ -4,6 +4,10 @@ import filtersTemplate from './partials/filters.html';
 import './js/filters';
 import categoriesTemplate from './partials/categories.html';
 import './js/categories';
+import exercisesTemplate from './partials/exercises.html';
+
+const exercises = document.querySelector('.exercises');
+exercises.innerHTML = exercisesTemplate;
 
 const categories = document.querySelector('.categories');
 categories.innerHTML = categoriesTemplate;
@@ -16,6 +20,7 @@ const hero = document.querySelector('.hero');
 
 header.innerHTML = headerTemplate;
 hero.innerHTML = heroTemplate;
+
 
 
 

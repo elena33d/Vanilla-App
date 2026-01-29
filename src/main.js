@@ -5,6 +5,7 @@ import './js/filters';
 import categoriesTemplate from './partials/categories.html';
 import './js/categories';
 import exercisesTemplate from './partials/exercises.html';
+import './js/exercises';
 
 const exercises = document.querySelector('.exercises');
 exercises.innerHTML = exercisesTemplate;
@@ -20,6 +21,7 @@ const hero = document.querySelector('.hero');
 
 header.innerHTML = headerTemplate;
 hero.innerHTML = heroTemplate;
+
 
 
 

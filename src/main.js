@@ -8,6 +8,18 @@ import exercisesTemplate from './partials/exercises.html';
 import './js/exercises';
 import modalTemplate from './partials/modal-exercise.html';
 import { openModal } from './js/modal-exercise';
+import ratingTemplate from './partials/modal-rating.html';
+import { openRatingModal } from './js/modal-rating';
+import { closeModal } from './js/modal-exercise';
+
+document.body.insertAdjacentHTML('beforeend', ratingTemplate);
+
+document.addEventListener('click', event => {
+  if (event.target.classList.contains('ratingBtn')) {
+    closeModal();
+    openRatingModal();
+  }
+});
 
 document.body.insertAdjacentHTML('beforeend', modalTemplate);
 
@@ -31,6 +43,7 @@ const hero = document.querySelector('.hero');
 
 header.innerHTML = headerTemplate;
 hero.innerHTML = heroTemplate;
+
 
 
 

@@ -1,16 +1,7 @@
-import headerTemplate from './partials/header.html';
-import heroTemplate from './partials/hero.html';
-import filtersTemplate from './partials/filters.html';
+import './css/styles.css';
 import './js/filters';
-import categoriesTemplate from './partials/categories.html';
 import './js/categories';
-import exercisesTemplate from './partials/exercises.html';
 import './js/exercises';
-import modalTemplate from './partials/modal-exercise.html';
-import { openModal } from './js/modal-exercise';
-import ratingTemplate from './partials/modal-rating.html';
-import { openRatingModal } from './js/modal-rating';
-import { closeModal } from './js/modal-exercise';
 
 document.body.insertAdjacentHTML('beforeend', ratingTemplate);
 
@@ -43,6 +34,7 @@ const hero = document.querySelector('.hero');
 
 header.innerHTML = headerTemplate;
 hero.innerHTML = heroTemplate;
+
 
 
 

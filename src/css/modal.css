@@ -1,0 +1,123 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 800px;
+  padding: 24px;
+  position: relative;
+}
+
+.modalCloseBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modalContent {
+  display: flex;
+  gap: 24px;
+}
+
+.modalVideo img {
+  width: 300px;
+  border-radius: 12px;
+}
+
+.modalTitle {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.modalRating {
+  margin-bottom: 12px;
+}
+
+.modalList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+.modalDescription {
+  margin-bottom: 20px;
+}
+
+.modalActions {
+  display: flex;
+  gap: 12px;
+}
+
+.favoriteBtn,
+.ratingBtn {
+  padding: 10px 16px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.favoriteBtn {
+  background: #e6533c;
+  color: #fff;
+}
+
+.ratingBtn {
+  background: #7e847f;
+  color: #fff;
+}
+
+.isHidden {
+  display: none;
+}
+.ratingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ratingStars {
+  display: flex;
+  gap: 10px;
+  border: none;
+}
+
+.ratingStars label {
+  cursor: pointer;
+}
+
+.emailLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.emailLabel input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.submitBtn {
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  background-color: #7e847f;
+  color: #fff;
+  cursor: pointer;
+}
